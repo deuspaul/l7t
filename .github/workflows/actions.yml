@@ -22,9 +22,5 @@ jobs:
       - name: time
         run: echo "'greeting time:' ${{ steps.print-to-log.outputs.time }}"
       - name: docker container action
-        uses: docker://oven/bun
-      - name: list containers
-        run: docker ps
-      - name: test bun
-        run: bun --version
+        uses: docker://hello-world:latest
         
